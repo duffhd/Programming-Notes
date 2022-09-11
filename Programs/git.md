@@ -1,6 +1,7 @@
 This file mostly shows useful commands on git.
 
 ## Branches
+
 ```shell
 # Create and checkout to the new branch
 git checkout -b new_branch_name
@@ -12,7 +13,9 @@ git branch -D new_branch # force deletion
 # Only switch branches
 git switch develop
 ```
+
 ## Commits
+
 ```shell
 # Add every tracked file to the staging area and commit
 git commit -am "title" -m "desc"
@@ -23,6 +26,7 @@ git commit --amend
 ```
 
 ## Remotes
+
 ```shell
 # Adding a remote repository
 # Here origin is the name you want for a given remote repository
@@ -39,6 +43,7 @@ git remote -v
 ```
 
 ## Stash
+
 ```shell
 # Save changes for later and clean the current file back to the HEAD
 git stash

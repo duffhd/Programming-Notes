@@ -1,6 +1,7 @@
 # Kotlin Cheatsheet
 
 ##### Table of contents
+
 - [Variables](#variables)
 - [Types](#types)
 - [Functions](#functions)
@@ -41,21 +42,24 @@ val lazyVal by lazy {
 ## Types
 
 ### Primitives
+
 Kotlin doesn't have any primitives, instead it has a class wrapping around them and a super type that every class extends by default, the Any class.
 
 ### Numerical
-| Signed| Unsigned|
-| --- | --- |
-| Byte  | UByte |
-| Short  | UShort |
-| Int  | UInt |
-| Long  | ULong |
+
+| Signed | Unsigned |
+| ------ | -------- |
+| Byte   | UByte    |
+| Short  | UShort   |
+| Int    | UInt     |
+| Long   | ULong    |
 
 ### Floating Point
+
 | Signed | Unsigned |
-| --- | --- |
-| Float  | UFloat |
-| Double  | UDouble |
+| ------ | -------- |
+| Float  | UFloat   |
+| Double | UDouble  |
 
 ### Strings
 
@@ -70,6 +74,7 @@ val message2 = "Hello, i'm ${age*2} years old"
 ```
 
 #### Raw Strings
+
 ```kotlin
 // Raw strings are delimited by """, and you can use newlines
 // Here "|" is the default margin prefix, and trimMargin will remove all |
@@ -96,6 +101,7 @@ val text = """
 ```
 
 ## Functions
+
 ```kotlin
 // All function parameters and returns needs to be typed.
 // Normal function with no return.
@@ -115,7 +121,9 @@ fun add(a: Int, b: Int) = a + b
 ## Collections
 
 ### Array
+
 Arrays are fixed size value containers.
+
 ```kotlin
 val a: Array<Int> = arrayOf(1, 2, 3) // [1, 2, 3]
 val b: ByteArray = byteArrayOf(1, 2, 3) // [1, 2, 3]
@@ -140,10 +148,13 @@ var arr = IntArray(5) { it * 1 }
 ```
 
 ### ArrayList
+
 ArraysLists have the same functionality as Arrays but they are dynamically resized 
 
 ### Map
+
 Hashmaps are a data storage in key-value pairs paradigm.
+
 ```kotlin
 val a = HashMap<String, Int>()
 // Add a new key with a given value.
@@ -158,6 +169,7 @@ val testValue = a["Test"]
 ## Control Flow
 
 ### If
+
 ```kotlin
 val a = 5
 val b = 10
@@ -174,6 +186,7 @@ var max = if (a > b) a else b
 ```
 
 ### When
+
 ```kotlin
 val number = 3
 
@@ -193,7 +206,9 @@ val result = when(number) {
     else -> "higher than three"
 } // three
 ```
+
 ### For
+
 ```kotlin
 // Everything that can be iterated over can be used in a for statement.
 val message = "Hello"
@@ -211,6 +226,7 @@ for (character in message) {
 ```
 
 ### forEach
+
 ```kotlin
 // Used on iterable objects.
 val numbers = listOf(1, 2, 3)
@@ -259,6 +275,7 @@ class MyOtherClass {
 ```
 
 ### Extending and implementing
+
 ```kotlin
 // Extending from other classes or implementing interfaces uses the same syntax.
 // You can only extend from one class, and implement as many interfaces you want.
@@ -337,6 +354,7 @@ sealed class ApiResponse<out T: Any> {
 ```
 
 ### Anonymous classes
+
 Anonymous classes can inline, extend and instantiate abstract classes.
 
 ```kotlin
@@ -346,6 +364,7 @@ val detector = object : Detector {
 ```
 
 ### Static methods
+
 ```kotlin
 // Static methods and variables can be placed inside the compaion object scope.
 // This is most used for constant values that live inside a class namespace, you don't need
@@ -358,7 +377,9 @@ class Person() {
 ```
 
 ## Objects
+
 Objects mostly replace the use of static methods that are used in Java.
+
 ```kotlin
 // Objects are singletons, meaning that only one instance of them exists.
 object Constants {
@@ -403,6 +424,7 @@ name.sayHello
 ```
 
 ## Lambda
+
 Lambdas are anonymous functions that can be passed as arguments to other functions.
 
 ```kotlin

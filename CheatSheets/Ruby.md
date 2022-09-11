@@ -24,6 +24,7 @@ This file was originally forked from https://github.com/ThibaultJanBeyer/cheatsh
 - [Useful Methods](#useful-methods)
 
 ## Misc
+
 - Everything in ruby is a method, even if it looks like a function
 - `$ irb`: is used as an interactive ruby programming shell on the terminal
 
@@ -52,8 +53,11 @@ MY_CONSTANT = # something
 # Symbols can be used like this as well:
 my_hash = { key: "value", key2: "value" } # is equal to { :key => "value", :key2 => "value" }
 ```
+
 ## Statements
+
 Some languages use semicolons or just indentation to define statements, in ruby we use blocks with `end`
+
 ```Ruby
 # ON variables we don't need to use end blocks
 name = 'alice'
@@ -94,6 +98,7 @@ multi_d[0][0] # Accessing values
 ### Hashes
 
 `Key => value` pair
+
 ```Ruby
 hash = { "key1" => "value1", "key2" => "value2" }
 
@@ -117,7 +122,6 @@ my_hash.each_value { |v| print v, " " }
 int_array = [1, 2, 3, 4]
 int_array.join # Join the int array to a string '1234'
 int_array.shuffle # Randomly changes the order of the values inside the array
-
 ```
 
 ## Methods
@@ -140,7 +144,7 @@ end
 class Person
   # @@ denotes a class variable that is always initialized when the class is created
   @@count = 0
-  
+
   # Attributes are used so that you can access (get and set) the instance variables outside
   # this class, they can be put under 'private' or 'protected' too.
   attr_reader :name # make it readable
@@ -163,9 +167,9 @@ class Person
 
   # Private methods go here
   def private_method; end 
-  
+
   protected
-  
+
   # Protected methods go here
   def protected_method; end
 end
@@ -473,6 +477,7 @@ array.sort! { |a, b| b <=> a } # to sort from Z to A instead of A to Z
 ```
 
 ## Error handling
+
 ```Ruby
 begin
   Interger("A") # Trying to parse a character to int will fail
@@ -483,6 +488,7 @@ end
 ```
 
 For the most part the `begin` keyword is ommited leaving only:
+
 ```Ruby
 Interger("A")
 rescue ArgumentError
@@ -491,7 +497,9 @@ end
 ```
 
 ### Raise
+
 You can raise your own errors
+
 ```Ruby
 raise 'Error'
 
@@ -500,7 +508,9 @@ rescue
 ```
 
 ### Ensure
+
 The ensure block will always be executed no matter the error that occured
+
 ```Ruby
 rescue ArgumentError
   # Handle the error
@@ -522,6 +532,7 @@ Time.now # displays the actual time
 ```
 
 ## Conventions
+
 - Classes and Modules are written in PascalCase (UpperCamelCase)
 - Methods ending with `?` denote that they return a boolean value
 - Methods ending with `!` denotes a potentially dangerous method that can lead to errors

@@ -18,7 +18,9 @@
 - [Type casting](#type-casting)
 
 ## Variables
+
 Python can infer variable types, but you can optionally static type anything on the language.
+
 ```python
 name = "Your Name"
 number = 0
@@ -40,15 +42,15 @@ LONG_NAME = "Quack Duck"
 
 ## Types
 
-| Name | Static typing | Example |
-| --- | --- | --- |
-| String | str | "alex" |
-| Int | int | 10 |
-| Float | float | 10.0 |
-| Boolean | bool | True, False |
-| Tuple | tuple[] | ("hello", 10) |
-| List | list[] | [1, 2, 3, 4] |
-| Dictionary | dict[] | {name: "alex", hobby: "programming"} |
+| Name       | Static typing | Example                              |
+| ---------- | ------------- | ------------------------------------ |
+| String     | str           | "alex"                               |
+| Int        | int           | 10                                   |
+| Float      | float         | 10.0                                 |
+| Boolean    | bool          | True, False                          |
+| Tuple      | tuple[]       | ("hello", 10)                        |
+| List       | list[]        | [1, 2, 3, 4]                         |
+| Dictionary | dict[]        | {name: "alex", hobby: "programming"} |
 
 ### Strings
 
@@ -68,7 +70,9 @@ full_name = first_name + last_name
 ```
 
 #### f string
+
 This is the most used and recommended method to put variables inside strings.
+
 ```python
 guest = "alex"
 print(f"Hello {guest}!")
@@ -78,17 +82,17 @@ print(f"Hello {guest}!")
 
 ### Comparison
 
-| Symbol | Reading |
-| --- | --- |
-| ==  | equals |
-| > | greater then |
-| < | lesser then |
-| >= | greater or equal then |
-| <= | lesser or equal then |
+| Symbol | Reading               |
+| ------ | --------------------- |
+| ==     | equals                |
+| >      | greater then          |
+| <      | lesser then           |
+| >=     | greater or equal then |
+| <=     | lesser or equal then  |
 
 ### Logical
 
-| and | or |
+| and | or  |
 | --- | --- |
 
 ## If, elif, else
@@ -118,6 +122,7 @@ my_tuple: tuple[int, str] = (1, "name")
 ```
 
 ### List
+
 List’s are collections of values from the same type.
 
 ```python
@@ -142,8 +147,10 @@ int_list: list[int] = [1, 2, 3, 4]
 ```
 
 ### Sets
+
 Sets are collections unordered collection of unique items (there is no duplicates), values inside the set are immutable, but you can remove
 or add new values.
+
 ```python
 # Create a set from values
 my_set = {1, 2, 3}
@@ -199,7 +206,9 @@ while flag:
 ```
 
 ### List/Dictionary comprehension
+
 Comprehensions are concise expressions to generate lists or dictionaries.
+
 ```python
 # Multiply every number in a given range and put the result inside the array
 lc = [x * 2 for x in range(10)]
@@ -211,9 +220,11 @@ dc = {num: num*num for num in range(1, 11)}
 ```
 
 ## Functions
+
 Python always needs indentation to be 4 spaces between function declarations 
 and its body (the same apply for loops, classes and other constructs),
 not doing so will result in errors. See [Indentation](#indentation).
+
 ```python
 def add(n1, n2):
     return n1 + n2
@@ -226,8 +237,10 @@ def add(n1: int, n2: int) -> int:
 ```
 
 ## Classes
+
 In Python classes methods need to receive the self parameter, meaning that they can be accessed on instantiated classes.
 Classes parameters are also accessed via self.
+
 ```python
 class Person:
     def __init__(self) -> None:
@@ -235,7 +248,7 @@ class Person:
         # can be accessed by the entire class methods.
         self.global_value = 10
 
-	# Methods always need to receive self
+    # Methods always need to receive self
     def method(self, value: int) -> None:
         print("i'm a method")
 
@@ -243,7 +256,6 @@ me = Person()
 me.method()
 
 # Output: i'm a method
-				
 ```
 
 ### Class parameters
@@ -252,8 +264,8 @@ me.method()
 class Dog:
     # Receive parameters after self
     def __init__(self, age: int, name: str) -> None:
-		 self.age = age
-		 self.name = name
+         self.age = age
+         self.name = name
 
     def bark(self) -> None:
         print(f"{self.name} is barking")
@@ -263,9 +275,12 @@ my_dog.bark()
 
 # Output: doug is barking
 ```
+
 ## Indentation
+
 Python uses levels of indentation to differ statements, as seen above, the level of indentation is denoted by a `:`
 Always indent using 4 spaces.
+
 ```python
 # Not putting the correct indentation can leave messy problems
 def no_indentation:
@@ -344,9 +359,9 @@ except ZeroDivisionError:
     print("You can't devide by 0")
 
 except TypeError:
-		...
+        ...
 except ValueError:
-		...
+        ...
 ```
 
 ### raise
@@ -358,7 +373,9 @@ if number > 10:
 ```
 
 ## Definition skipping
+
 Sometimes it can be useful to skip a method or function definition.
+
 ```python
 def to_implement(n1: int, name: str) -> bool:
     ...
@@ -368,6 +385,7 @@ class Skip:
 ```
 
 You can change the use of three dots to the pass keyword.
+
 ```python
 def to_implement(n1: int, name: str) -> bool:
     pass
