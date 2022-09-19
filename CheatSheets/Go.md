@@ -499,3 +499,7 @@ func only64[V numbers](nums []V) V {
     return sum
 }
 ```
+
+## More Material
+
+For examples of language features and library usage go to [Go by Example](https://gobyexample.com/)
