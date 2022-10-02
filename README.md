@@ -2,10 +2,6 @@
 
 A collection of personal notes, cheat-sheets, language features, frameworks, programs etc...
 
-## Databases
-
-- [MongoDB](/Databases/mongodb.md)
-
 ## CheatSheets
 
 Cheatsheets contain straightforward information about basic language constructs, at the end of each file more in-depth guides are linked for deeper learning.
@@ -14,6 +10,13 @@ Cheatsheets contain straightforward information about basic language constructs,
 - [Kotlin](/CheatSheets/Kotlin.md)
 - [Python](/CheatSheets/Python.md)
 - [Ruby](/CheatSheets/Ruby.md)
+
+## Databases
+
+- [MongoDB](/Databases/mongodb.md)
+
+## Languages
+Compilation of documents separated by programming languages talking about more in-depth concepts.
 
 ## Programs
 
