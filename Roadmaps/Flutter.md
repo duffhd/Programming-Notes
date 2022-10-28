@@ -2,8 +2,6 @@
 
 ## Screen creation
 
----
-
 Basic Components (Column, Row, SafeArea)
 
 Scrolls (ListView, SingleChildScroll, ListView.builder, Slivers)
@@ -36,15 +34,11 @@ Custom view creation
 
 ## Navigation
 
----
-
 [Navigation and Router](https://docs.flutter.dev/development/ui/navigation)
 
 [Deep Link](https://docs.flutter.dev/development/ui/navigation/deep-linking)
 
 ## Async
-
----
 
 [Concurrency](https://dart.dev/guides/language/concurrency)
 
@@ -54,15 +48,11 @@ Custom view creation
 
 ## Ui state management
 
----
-
 [Bloc and Cubit](https://pub.dev/packages/bloc)
 
 [Provider](https://pub.dev/packages/provider)
 
 ## Pubspec
-
----
 
 [Pubspec usage](https://dart.dev/tools/pub/pubspec)
 
@@ -74,13 +64,9 @@ Overwriting dependencies
 
 ## Internationalization
 
----
-
 [intl](https://pub.dev/packages/intl)
 
 ## Modeling data
-
----
 
 [Working with JSON](https://docs.flutter.dev/development/data-and-backend/json)
 
@@ -90,15 +76,11 @@ Overriding classes `== operator` and `hashCode`
 
 ## Http
 
----
-
 [Dart http library](https://pub.dev/packages/http)
 
 [Dio library](https://pub.dev/packages/dio)
 
 ## Testing
-
----
 
 [Mocktail](https://pub.dev/packages/mocktail)
 
@@ -106,15 +88,11 @@ Overriding classes `== operator` and `hashCode`
 
 ## Preferences
 
----
-
 [SharedPreferences](https://pub.dev/packages/shared_preferences)
 
 [Flutter secure storage](https://pub.dev/packages/flutter_secure_storage)
 
 ## Architecture
-
----
 
 Local multi package
 
@@ -122,13 +100,9 @@ Multi repository
 
 ## Dependency Injection
 
----
-
 [GetIt](https://pub.dev/packages/get_it)
 
 ## Firebase
-
----
 
 Firebase user authentication
 
@@ -142,13 +116,9 @@ Firebase messaging (push notifications)
 
 ## Native
 
----
-
 [Writing platform specific code](https://docs.flutter.dev/development/platform-integration/platform-channels)
 
 ## Official packages and plugins
-
----
 
 [Flutter dev community](https://pub.dev/publishers/fluttercommunity.dev/packages)
 
